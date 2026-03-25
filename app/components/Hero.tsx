@@ -27,6 +27,7 @@ function Hero() {
   async function handleShorten() {
     if (!url.trim()) {
       setError("Please add a link")
+      setShortUrl("")
       return
     }
     const res = await fetch("/api/shorten", {
@@ -108,6 +109,8 @@ function Hero() {
               onChange={ (e: React.ChangeEvent<HTMLInputElement>) => {
                 setUrl(e.target.value)
                 setError("")
+                setShortUrl("")
+                setCopied(false)
               }}
               placeholder="Shorten a link here..." 
               className={`rounded-lg bg-white text-gray-900 py-3 px-5 w-full outline-0  border-0
