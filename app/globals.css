@@ -3,11 +3,25 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --primaryBlue: hsl(180, 66%, 49%);
+  --primaryPurple: hsl(257, 27%, 26%);
+  --secondaryRed: hsl(0, 87%, 67%);
+  --neutralGray400: hsl(0, 0%, 75%);
+  --neutralGray500: hsl(257, 7%, 63%);
+  --neutralGray900: hsl(255, 11%, 22%);
+  --neutralGray950: hsl(260, 8%, 14%);
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
+  --color-primaryBlue: var(--primaryBlue);
+  --color-primaryPurple: var(--primaryPurple);
+  --color-secondaryRed: var(--secondaryRed);
+  --color-neutralGray400: var(--neutralGray400);
+  --color-neutralGray500: var(--neutralGray500);
+  --color-neutralGray900: var(--neutralGray900);
+  --color-neutralGray950: var(--neutralGray950);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
 }
